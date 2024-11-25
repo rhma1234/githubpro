@@ -11,8 +11,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: 'Testing Github action'
-        run: pwd
+      - name: 'Before listing files'
+        run: ls
 
-      - name: 'Testing Printing'
-        run: echo "Rahma"
+     
+        uses: actions/checkout@v3
+
+      - name: 'After listing files'
+        run: ls

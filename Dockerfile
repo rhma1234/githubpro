@@ -2,8 +2,8 @@ FROM openjdk
 
 WORKDIR /app
 
-COPY rahma.java .
+COPY Main.java .
 
-RUN javac rahma.java
+RUN javac Main.java
 
-CMD ["java", "rahma"]  
+CMD ["java", "Main"]
